@@ -1,0 +1,160 @@
+/*Fonts*/
+@font-face {
+  font-family: 'Bricolage Grotesque';
+  src: url(assets/fonts/Bricolage_Grotesque/BricolageGrotesque-VariableFont_opsz\,wdth\,wght.ttf) format('truetype');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Dm Sans';
+  src: url(assets/fonts/DM_Sans/DMSans-VariableFont_opsz\,wght.ttf) format('truetype');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Dm Sans Italic';
+  src: url(assets/fonts/DM_Sans/DMSans-Italic-VariableFont_opsz\,wght.ttf) format('truetype');
+}
+:root{
+  /*colors*/
+  --clr-neutral-900:#02012C;
+  --clr-neutral-800:#262540;
+  --clr-neutral-700:#302F4A;
+  --clr-neutral-600:#3C3B5E;
+  --clr-neutral-300:#ACACB7;
+  --clr-neutral-200:#D4D3D9;
+  --clr-neutral-0:#FFFFFF;
+  --clr-orange-500:#FF820A;
+  --clr-blue-500:#FF820A;
+  --clr-blue-700:#2B1B9C;
+  /*fonts*/
+  --ff-bricolage-grotesque:'Bricolage Grotesque','system-ui','sans-serif';
+  --ff-dm-sans:'Dm Sans','system-ui','sans-serif';
+  --ff-dm-sans-italic:'Dm Sans Italic','system-ui','sans-serif';
+  /*spacing*/
+  --spacing-0: 0;
+  --spacing-2: 2px;
+  --spacing-4: 4px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-64: 64px;
+  --spacing-80: 80px;
+  --spacing-96: 96px;
+  --spacing-112: 112px;
+  --spacing-128: 128px;
+  --spacing-140: 140px;
+}
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  background-color: var(--clr-neutral-900);
+  color: var(--clr-neutral-0);
+  padding-top: var(--spacing-48);
+  padding-left: var(--spacing-112);
+  padding-right: var(--spacing-112);
+  /* 4. Add accessible line-height */
+  /* 5. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 6. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+/*
+  10. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+.text-preset-1{
+  font-family: var(--ff-dm-sans-italic);
+  letter-spacing: -2px;
+  font-weight: 600;
+  font-size: clamp(6rem, 6rem + 0vw, 6rem);
+}
+.text-preset-2{
+  font-family: var(--ff-bricolage-grotesque);
+  font-weight: 700;
+  font-size: clamp(3.25rem, 3.25rem + 0vw, 3.25rem);
+}
+
+.text-preset-3{
+  font-family: var(--ff-dm-sans);
+  font-weight: 300;
+  font-size: clamp(2rem, 2rem + 0vw, 2rem);
+}
+.text-preset-4{
+  font-family: var(--ff-dm-sans);
+  font-weight: 700;
+  line-height: 1.2;
+  font-size: clamp(1.75rem, 1.75rem + 0vw, 1.75rem);
+}
+.text-preset-5{
+  font-family: var(--ff-dm-sans);
+  font-weight: 600;
+  line-height: 1.2;
+
+  font-size: clamp(1.25rem, 1.25rem + 0vw, 1.25rem);
+}
+.text-preset-6{
+  font-family: var(--ff-dm-sans);
+  font-weight: 500;
+  line-height: 1.2;
+
+  font-size: clamp(1.125rem, 1.125rem + 0vw, 1.125rem);
+}
+.text-preset-7{
+  font-family: var(--ff-dm-sans);
+  font-weight: 500;
+  line-height: 1.2;
+
+  font-size: clamp(1.125rem, 1.125rem + 0vw, 1.125rem);
+}
+.text-preset-8{
+  font-family: var(--ff-dm-sans);
+  font-weight: 500;
+  line-height: 1.2;
+  font-size: clamp(1.125rem, 1.125rem + 0vw, 1.125rem);
+}
