@@ -95,6 +95,8 @@ export default {};
   align-content: center;
   align-items: center;
   margin-top: 16px;
+  margin-bottom: 16px;
+
 }
 .hourly-weather-card{
   margin-left: 32px;
@@ -102,7 +104,7 @@ export default {};
   flex-grow: 1; 
   background-color: var(--clr-neutral-800);
   border-radius: 20px;
-    max-width: 384px;
+  max-width: 384px;
   max-height: 693px;
   height: 100%;
   width: 100%;
@@ -113,7 +115,6 @@ export default {};
   gap: 12px;
   max-width: 120px;
   background-color: var(--clr-neutral-600);
-
   max-height: 37px;
   border-radius: 8px;
   align-content: center;
@@ -126,7 +127,6 @@ export default {};
   flex-direction: row;
   margin-top: 24px;
   margin-bottom: 16px;
-  
   justify-content: space-between;
 
   align-items: center;
